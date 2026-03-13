@@ -28,7 +28,8 @@ function ContactPage() {
 
     try {
       await API.post("/contact", form);
-      const res = await fetch("https://takecutfilms.onrender.com/api/contact/sendContactMessage", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}contact/sendContactMessage`,
+        {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
