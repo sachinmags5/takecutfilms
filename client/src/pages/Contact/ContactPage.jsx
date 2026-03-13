@@ -28,7 +28,7 @@ function ContactPage() {
 
     try {
       await API.post("/contact", form);
-      const res = await fetch("http://localhost:5000/api/contact/sendContactMessage", {
+      const res = await fetch("https://takecutfilms.onrender.com/api/contact/sendContactMessage", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
