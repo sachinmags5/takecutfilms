@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional global style */
+body{
+  background:black;
+  color:white;
+}
