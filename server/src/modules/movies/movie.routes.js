@@ -6,17 +6,17 @@ import {
   updateMovie,
   deleteMovie,
 } from "./movie.controller.js";
+import { authMiddleware } from "../../middleware/auth.middleware.js";
+import { isAdmin } from "../../middleware/role.middleware.js";
 
 const router = express.Router();
-
+// PUBLIC
 router.get("/", getMovies);
-
 router.get("/:slug", getMovie);
 
-router.post("/", createMovie);
-
-router.put("/:id", updateMovie);
-
-router.delete("/:id", deleteMovie);
+// ADMIN ONLY
+router.post("/", authMiddleware, isAdmin, createMovie);
+router.put("/:id", authMiddleware, isAdmin, updateMovie);
+router.delete("/:id", authMiddleware, isAdmin, deleteMovie);
 
 export default router;
