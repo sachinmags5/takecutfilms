@@ -1,20 +1,10 @@
-import Admin from "./auth.model.js";
+import { loginService } from "./auth.service.js";
 
 export const login = async (req, res, next) => {
   try {
-    const { email, password } = req.body;
-
-    const admin = await Admin.findOne({ email, password });
-
-    if (!admin) {
-      return res.status(401).json({ message: "Invalid credentials" });
-    }
-
-    res.json({
-      message: "Login successful",
-      admin,
-    });
-  } catch (error) {
-    next(error);
+    const data = await loginService(req.body);
+    res.json({ success: true, data });
+  } catch (err) {
+    next(err);
   }
 };
