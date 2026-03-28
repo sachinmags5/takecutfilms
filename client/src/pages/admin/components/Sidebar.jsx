@@ -1,7 +1,7 @@
 // ================= Sidebar.jsx =================
 
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { logout } from "../../../features/auth/authSlice";
 import { motion } from "framer-motion";
@@ -17,7 +17,7 @@ import {
 const Sidebar = () => {
   const { pathname } = useLocation();
   const dispatch = useDispatch();
-
+  const navigate = useNavigate();
   const [collapsed, setCollapsed] = useState(false);
 
   const nav = [
@@ -90,7 +90,12 @@ const Sidebar = () => {
       {/* Logout */}
       <div className="p-4">
         <button
-          onClick={() => dispatch(logout())}
+          onClick={ () => {
+             dispatch(logout());
+            console.log('kkkk');
+            navigate("/admin/login");
+          }
+          }
           className="flex items-center gap-3 w-full p-3 rounded-xl bg-red-500 hover:bg-red-600 transition shadow-lg"
         >
           <LogOut size={18} />
