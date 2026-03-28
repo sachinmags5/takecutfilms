@@ -7,3 +7,7 @@ body{
   background:black;
   color:white;
 }
+
+.input {
+  @apply w-full p-3 rounded bg-black/50 border border-white/20 outline-none focus:border-pink-400;
+}
