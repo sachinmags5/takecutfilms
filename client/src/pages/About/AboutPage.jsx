@@ -16,7 +16,7 @@ const team = [
       "Manages production timelines, budgets, and collaboration between creative teams.",
   },
   {
-    name: "Praksh Salaskar",
+    name: "Prakash Salaskar",
     role: "Production Manager",
     image: "/prakash.jpg",
     description:
