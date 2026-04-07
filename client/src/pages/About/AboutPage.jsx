@@ -3,17 +3,10 @@ import { motion } from "framer-motion";
 const team = [
   {
     name: "Ashish Sakpal",
-    role: "Line Producer",
+    role: "Line Producer (Founder)",
     image: "/ashish.jpg",
     description:
       "Leads the Production team of the company and ensures every project delivers a strong production experience.",
-  },
-  {
-    name: "Gaurav Sharma",
-    role: "Production Manager",
-    image: "/gaurav.jpg",
-    description:
-      "Manages production timelines, budgets, and collaboration between creative teams.",
   },
   {
     name: "Samar Abbas Rizvi",
@@ -30,11 +23,18 @@ const team = [
       "Manages production timelines, budgets, and collaboration between creative teams.",
   },
   {
+    name: "Gaurav Sharma",
+    role: "Production Controller",
+    image: "/gaurav.jpg",
+    description:
+      "Manages production and collaboration between creative teams.",
+  },
+  {
     name: "Sushil Javhare",
-    role: "Production Manager",
+    role: "Production Controller",
     image: "/sushil.jpg",
     description:
-      "Manages production timelines, budgets, and collaboration between creative teams.",
+      "Manages production and collaboration between creative teams.",
   },
   
 ];
