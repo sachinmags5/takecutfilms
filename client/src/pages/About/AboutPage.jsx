@@ -4,24 +4,39 @@ const team = [
   {
     name: "Ashish Sakpal",
     role: "Line Producer",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    image: "/ashish.jpg",
     description:
-      "Leads the creative direction of the studio and ensures every project delivers a strong cinematic experience.",
+      "Leads the Production team of the company and ensures every project delivers a strong production experience.",
   },
   {
-    name: "Kuldeep Vyas",
-    role: "Director",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    name: "Gaurav Sharma",
+    role: "Production Manager",
+    image: "/gaurav.jpg",
     description:
       "Manages production timelines, budgets, and collaboration between creative teams.",
   },
   {
-    name: "Gaurav Sharma",
-    role: "Cinematographer",
-    image: "https://randomuser.me/api/portraits/men/67.jpg",
+    name: "Samar Abbas Rizvi",
+    role: "Production Manager",
+    image: "/samar.jpg",
     description:
-      "Responsible for capturing stunning visuals that elevate storytelling through cinematic framing.",
+      "Manages production timelines, budgets, and collaboration between creative teams.",
   },
+  {
+    name: "Praksh Salaskar",
+    role: "Production Manager",
+    image: "/prakash.jpg",
+    description:
+      "Manages production timelines, budgets, and collaboration between creative teams.",
+  },
+  {
+    name: "Sushil Javhare",
+    role: "Production Manager",
+    image: "/sushil.jpg",
+    description:
+      "Manages production timelines, budgets, and collaboration between creative teams.",
+  },
+  
 ];
 
 function AboutPage() {
@@ -40,12 +55,11 @@ function AboutPage() {
           animate={{ opacity: 1, y: 0 }}
         >
           <h1 className="text-6xl font-bold mb-4">
-            Our Creative Team
+            Our Production Team
           </h1>
 
           <p className="text-gray-300 text-lg max-w-xl mx-auto">
-            Passionate filmmakers dedicated to creating cinematic
-            experiences and unforgettable storytelling.
+            A Passionate and dedicated production team committed to turning creative vision into flawless execution.
           </p>
         </motion.div>
 
