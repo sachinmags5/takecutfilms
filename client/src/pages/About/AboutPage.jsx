@@ -6,7 +6,21 @@ const team = [
     role: "Line Producer (Founder)",
     image: "/ashish.jpg",
     description:
-      "Leads the Production team of the company and ensures every project delivers a strong production experience.",
+      "Heads the production team with 10+ years of hands-on industry experience, overseeing end-to-end execution, optimizing workflows, and ensuring every project aligns with creative vision, budget, and timelines while delivering exceptional production quality.",
+  },
+    {
+    name: "Gaurav Sharma",
+    role: "Production Controller",
+    image: "/gaurav.jpg",
+    description:
+      "Manages production and collaboration between creative teams, technicians and vendors.",
+  },
+  {
+    name: "Sushil Javhare",
+    role: "Production Controller",
+    image: "/sushil.jpg",
+    description:
+      "Manages production and collaboration between creative teams, technicians and vendors.",
   },
   {
     name: "Samar Abbas Rizvi",
@@ -21,22 +35,7 @@ const team = [
     image: "/prakash.jpg",
     description:
       "Manages production timelines, budgets, and collaboration between creative teams.",
-  },
-  {
-    name: "Gaurav Sharma",
-    role: "Production Controller",
-    image: "/gaurav.jpg",
-    description:
-      "Manages production and collaboration between creative teams.",
-  },
-  {
-    name: "Sushil Javhare",
-    role: "Production Controller",
-    image: "/sushil.jpg",
-    description:
-      "Manages production and collaboration between creative teams.",
-  },
-  
+  },  
 ];
 
 function AboutPage() {
